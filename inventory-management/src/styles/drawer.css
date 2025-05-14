@@ -1,0 +1,163 @@
+@import "./base.css";
+
+.logo {
+    display: flex;
+    height: 56px;
+        
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row;
+
+
+    text-align: center;
+    color: var(--primary-500);
+    font-family: inherit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+.login-image {
+    width: 48px;
+    height: 48px;
+}
+
+/** Drawer styles **/
+.drawer {
+    width: 280px;
+    height: 960px;
+    
+    border-radius: 0px 8px 8px 0px;
+    border-right: 1px solid var(--Gray-50);
+    background: var(--white);
+
+    padding: 24px 24px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    color: var(--primary-500);
+
+    width: 200px;
+    height: 25px;
+    
+}
+
+a:active,
+a:hover {
+    color: var(--primary-900);
+    background-color: aqua;
+
+    padding: 12px 12px;
+    border-radius: 34px;
+    
+}
+
+
+li {
+    list-style: none;
+}
+/*Styling company Logo*/
+
+
+/*Styling main-icons*/
+.main-icons {
+    display: flex;
+    width: 232px;
+    height: 500px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    color: var( --Grey-600);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.logout-and-settings {
+    width: 232px;
+    height: 124px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.logout-and-settings li {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.search-bar {
+    background-color: #FFF;
+    width: 1140px;
+    height: 100px;
+    border: 1px solid #EEE;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40rem;
+
+
+}
+
+/*Styling the search bar*/
+
+.frame-42 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+}
+
+
+.bell-icon {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
+.Search {
+    width: 320px;
+    padding: 10px 16px;
+    border: 1px solid var(--Gray-50);
+
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    outline: none;
+}
+
+.Avatar {
+    background: url("../assets/search-bar/avatar.svg") lightgray 50% / cover no-repeat;
+    border-radius: 49%;
+    width: 41.861px;
+    height: 41.825px;
+    flex-shrink: 0;
+
+}

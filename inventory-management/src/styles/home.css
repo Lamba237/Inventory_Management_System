@@ -1,0 +1,9 @@
+@import './base.css';
+
+.home-layout-container {
+    width: 1470px;
+    height: 1211px;
+    background-color: var(--Gray-50);
+    display: flex;
+    justify-content: center;
+}

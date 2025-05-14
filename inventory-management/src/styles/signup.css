@@ -1,0 +1,134 @@
+@import "./base.css";
+
+/***********************************/
+/*Sign up form container styling*/
+/**********************************/
+.signup-form-container {
+    display: inline-flex;
+    height: 960px;
+    padding: 163px 238px 164px 227px;
+    align-items: center;
+    gap: 364px;
+}
+
+/***************************/
+/*styling signup note*/
+/**************************/
+.signup-note {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    width: 100%;
+    height: auto;
+}
+
+.header-one {
+    text-align: center;
+    color: var(--Grey-900);
+    font-family: inherit;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.paragraph-one {
+    color: var(--Grey-500);
+    text-align: center;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+/********************************/
+/*Company Logo and company Name*/
+/*******************************/
+.login-image {
+    width: 251px;
+    height: 251.316px;
+    flex-shrink: 0;
+}
+
+.company-name {
+    color: #009ED8;
+    font-family: Inter;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+
+/**************************/
+/*Form container styling */
+/*************************/
+.form-container {
+    width: 360px;
+    height: 633px;
+}
+
+/**********************/
+/*input fields Layout*/
+/**********************/
+input {
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    width: 94%;
+    height: auto;
+
+    /*input fields styling*/
+    border-radius: 8px;
+    border: 1px solid var(--Grey-300);
+    background: var(--white);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+
+button {
+    width: 369px;
+    height: 44px;
+    border-radius: 4px;
+
+    border: 1px solid var(--Primary-primary-600);
+    background: var(--Primary-primary-600);
+    /* Shadow/xs */
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+    padding: 10px 18px;
+    padding-top: 10px;
+
+    color: var(--white);
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    transition: 0.2s ease-out;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--primary-700);
+    cursor: pointer;
+}
+
+/*Error message styling*/
+.errors-500 {
+    color: var(--red-500);
+    padding-top: 10px;
+}

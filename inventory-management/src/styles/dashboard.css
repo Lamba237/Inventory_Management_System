@@ -1,0 +1,321 @@
+@import './base.css';
+
+.dashboard-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+/***********************************************/
+/* Sales and Purchase flex styling*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    margin: 22px 22px 22px 32px;
+    border-radius: 8px;
+    width: 690px;
+    height: 163px;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.logo-container .help {
+    width: 25px;
+    height:  25px;
+}
+
+.logo-container img {
+    align-self: center;
+}
+
+h2 {
+    padding-left: 16px;
+    color: var(--Grey-800);
+
+    font-family: inherit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.text-div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-div strong {
+    margin-left: 16px;
+    color: var(--Grey-600);
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.text-div .last-child {
+    margin-right: 16px;
+}
+
+/*********************************************/
+
+
+/**********************************************/
+/* Product and inventory general flex styling*/
+
+.inv-prod {
+    background-color: var(--white);
+    display: inline-flex;
+    flex-direction: column;
+    width: 384px;
+    height: 163px;
+    margin: 22px 32px 22px 0px;
+    border-radius: 8px;
+    gap: 8px;
+  
+}
+.inv-prod-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+hr {
+    border-width: 1px;
+    border-style: groove;
+}
+
+.inv-prod-items p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.flex-action {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flex-action:first-child {
+    margin-left: 28px;
+}
+.flex-action:last-child {
+    margin-right: 16px;
+}
+
+.flex-action strong {
+    color: var(--Grey-600);
+    font-family: inherit;
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 600;
+     line-height: 24px;
+}
+.flex-action p {
+    color: #444;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 20px;
+}
+
+.flex-action img {
+    display: block;
+    margin: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*Line charts styling*/
+.line-chart-container {
+    grid-column-start: 2;
+
+    width: 385px;
+    height: 320px;
+    margin-right: 30px;
+    margin-top: 22px;
+    border-radius: 10px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+
+}
+
+/*****************************/
+/* All stocks styling */
+/****************************/
+
+.all-stocks-container {
+    background: var(--white);
+    width: 690px;
+    height: 308px;
+    border-radius: 10px;
+    margin: 22px 21px 22px 32px;
+}
+
+.allStock-header {
+    display: flex;
+    align-items: center;
+    gap: 430px;
+}
+
+.allStock-header p {
+    color: var(--primary-700);
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 8px 8px 8px;
+    border-radius: 15px;
+    background-color: var(--primary-50);
+}
+
+.allStock-header p:hover {
+    background-color: var(--primary-100);
+    transition: background-color 0.3s ease-out;
+}
+
+.stocks-list {
+    overflow-x: auto;
+}
+
+table {
+    width: 95%;
+    text-align: left;
+    border-spacing: 1rem;
+    border-collapse: separate;
+}
+th {
+    color: var(--Grey-600);
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+td {
+    color: #666;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 20px;
+}
+tr:hover {
+     background-color: var(--red-50);
+}
+
+/*********************************/
+/*Low stock component styling*/
+/********************************/
+.low-stocks-container {
+    width: 385px;
+    height: 309px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background-color: var(--white);
+    margin-top: 21px;
+}
+
+.lowStock-img {
+    width:  60px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+}
+
+.lowStock-header {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+.lowStock-header p {
+    color: var(--primary-700);
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 8px 8px 8px;
+    background-color: var(--primary-50);
+    border-radius: 17px;
+}
+.lowStock-header p:hover {
+    background-color: var(--primary-100);
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.lowStock-details {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.low-stock-item {
+    display: flex;
+    align-items: center;
+    width: 355px;
+    height: 70px;
+    gap: 15px;
+    justify-content: first baseline;
+}
+
+
+.lowStock-details td:first-child {
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+.lowStock-details td:last-child {
+    font-size: 12.1px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.low-stock-status {
+    text-align: center;
+    padding: 2px 8px 2px 6px;
+    border-radius: 16px;
+    background-color: var(--red-50);
+
+    width: 24px;
+    height: 18px;
+    font-family: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--red-700);
+
+}
