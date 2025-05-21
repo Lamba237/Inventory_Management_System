@@ -1,0 +1,91 @@
+@import "./base.css";
+
+/*****************************************/
+/*Styling the overall inventory component*/
+/*****************************************/
+
+.overall-container {
+    width: 1096px;
+    height: 188px;
+    border-radius: 8px;
+    background: var(--white); 
+    margin: 22px 32px 22px 32px;
+    font-family: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
+
+.inventory-record {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    align-items: center;
+}
+
+.flex-goes-here {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inventory-text-header {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 190px;
+
+}
+.inventory-text-header p {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.inventory-text-header p:first-child {
+    color: var(--primary-500);
+    margin-left: 35px;
+}
+
+.inventory-text-header p:nth-child(2) {
+    color: #E19133;
+}
+.inventory-text-header p:nth-child(3) {
+    color: #845EBC;
+}
+.inventory-text-header p:last-child {
+    color: var(--red-400);
+}
+
+.inventory-text-header p {
+    margin: 0;
+    padding: 0;
+}
+
+.grey-400 {
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--Grey-400);
+}
+.grey-600 {
+    font-size: 16px;
+    font-style: inherit;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.product-container {
+    background-color: var(--white);
+    width: 1096px;
+    height: 606px;
+    margin: 32px;
+    border-radius: 8px;
+}
