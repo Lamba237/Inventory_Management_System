@@ -1,5 +1,6 @@
-import { useState } from "react";
-import FileBrowser from "./fileBrowsing";
+import { useState, useEffect } from "react";
+import './addProduct.css';
+import Form from "./form";
 
 export default function AddProduct() {
     const [showForm, setShowForm] = useState(false);
@@ -8,20 +9,44 @@ export default function AddProduct() {
         setShowForm(!showForm);
     }
 
+    useEffect(() => {
+        if (showForm) {
+        document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        }
+    }, [showForm]);
+
     return (
         <div className="add-product">
-            <button onClick={toggleForm}>
-                {showForm ? "Hide product" : "Add Product"}
+            <button onClick={toggleForm} className="product-btn blue-btn">
+                Add Product
             </button>
 
             {showForm && (
-                <div className="add-product-form">
-                    <form>
-                        <div className="header-form-container">
-                            <h2>New Product</h2>
-                            <FileBrowser />
+                <div className="modal-container">
+                    <div className="modal-attributes">
+
+                        <div className="modal-files">
+                            <h2 className="modal-header">New Product</h2>
+
+                            <div className="file-name">
+                                <div className="dotted-box"></div>
+                                <div className="browse-files">
+                                    <p>Drag image here</p>
+                                    <p>or</p>
+                                    <p>Browse file</p>
+                                </div>
+                            </div>
                         </div>
-                    </form>
+
+                        <div className="modal-form">
+                            <Form />
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
